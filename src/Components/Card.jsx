@@ -1,8 +1,12 @@
-import { div, h1 } from "framer-motion/client";
+import { motion } from "framer-motion";
+
 import React from "react";
 
-
-function Card({ title = "Development", subtitle = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", image = defaultIcon }) {
+function Card({
+  title = "Development",
+  subtitle = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+  image = defaultIcon,
+}) {
   return (
     <div className="p-15 max-w-sm mx-auto border  rounded shadow-md flex flex-col items-center space-y-4 text-sm ">
       <img
